@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
 	   cout << "number of elements in a :" << a.length()  << std::endl;
 	   cout << "access last elt of a with a(3) :" << a(3)  << std::endl;
 
+	   blitz::TinyVector<int, 4> b(114);
+	   cout << "Default constructed b :" << b << std::endl;
 	   //Rcpp::IntegerVector d(4);
 	   //d = Rcpp::IntegerVector::create(1,2,3,4);
 
