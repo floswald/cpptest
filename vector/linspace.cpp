@@ -37,5 +37,7 @@ int main(){
 	r3 = linspace(-5,5,19);
 	std::cout << "linspace(-5,5,19):" << std::endl;
 	for(std::vector<double>::iterator it=r3.begin();it!=r3.end();it++) std::cout << *it << std::endl;
+
+	
 	return 0;
 }

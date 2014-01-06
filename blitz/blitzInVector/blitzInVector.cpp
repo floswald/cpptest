@@ -29,6 +29,9 @@ int main(){
 	tmp(all,all,2) = (*vec.at(1))(all,all,3);	// age 3 from data2
 
 	cout << "tmp(1,:,:) " << tmp(1,all,all) << endl;
+
+
+
 	return 0;
 }
 

@@ -30,7 +30,18 @@ int main(int argc, char *argv[])
 
 
 
-// compile with
-// llvm-g++-4.2 -I/Library/Frameworks/R.framework/Resources/include
-//  -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.0/Resources/library/Rcpp/include"
-// tinyVector.cpp -o tiny
+//
+//
+// compile
+//llvm-g++-4.2 -arch x86_64 -I/Library/Frameworks/R.framework/Resources/include -DNDEBUG 
+//-W -I/usr/local/include -I/usr/local/include -I"/Library/Frameworks/R.framework/Versions/3.0/Resources/library/Rcpp/include"  
+//-fPIC  -g3 -rdynamic -c RcppExports.cpp -o RcppExports.o
+//
+//link
+//llvm-g++-4.2 -arch x86_64 -dynamiclib -Wl,-headerpad_max_install_names -undefined 
+//dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/lib -L/usr/local/lib
+// -o bkPackage2.so RcppExports.o rcpp_hello_world.o solve.o 
+// /Library/Frameworks/R.framework/Versions/3.0/Resources/library/Rcpp/lib/libRcpp.a 
+// -L/usr/local/lib -lgsl -lgslcblas 
+// /Library/Frameworks/R.framework/Versions/3.0/Resources/library/Rcpp/lib/libRcpp.a 
+// -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
