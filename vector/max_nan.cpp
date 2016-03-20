@@ -39,6 +39,7 @@
 				imax = p;
 				max  = *v_iter;
 			}
+			p++;
 		}
 	}
 
