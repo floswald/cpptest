@@ -7,12 +7,12 @@ using namespace arma;
 
 int main() {
 
-	mat A = randu<mat>(6, 2);
+	vec A = linspace<vec>(0,1,10);
 
 	double * ptr = A.memptr();
 
 	for (int i=0;i<A.size();i++){
-		std::cout << "A(i)=" << ptr[i];
+		std::cout << "A("<< i << ")=" << ptr[i] << std::endl;
 	}
 
 	return 0;
