@@ -24,6 +24,10 @@ int main() {
 
 	interp1(X,Y,xx2,yy2);
 	arma::cout << "yy2 = " << yy2 << arma::endl;
+	xx2 = 0.44;
+
+	interp1(X,Y,xx2,yy2);
+	arma::cout << "yy2 = " << yy2 << arma::endl;
 	return 0;
 
 }
